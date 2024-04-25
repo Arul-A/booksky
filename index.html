@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Rich Dad, Poor Dad by Robert T. Kiyosaki is a personal finance book that emphasizes the importance of financial education, teaches how to make money work for you, and challenges traditional beliefs about money.</p>
+            <button id="del" onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    
+    <div class="popup-overlay">
+
+    </div>
+    <div class="popup">
+        <h2>Add Book</h2>
+        <input type="text" placeholder="Book title" id="book-title">
+        <input type="text" placeholder="Author" id="author">
+        <textarea placeholder="Short description" id="description"></textarea>
+        <button id="add" onclick="save()">Add</button>
+        <button id="cancel">Cancel</button>
+       </div>
+    <button class="btn" id="add-btn">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
